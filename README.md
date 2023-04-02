@@ -14,3 +14,5 @@ terraform apply - создаем машины.
 ![изображение](https://user-images.githubusercontent.com/118304300/229360506-3b47a9b2-a0dd-44b8-ad3d-0041fc6bbcbd.png)
 Для проверки состояния postgeSQL добавил строки в playDB.yaml:
 ![изображение](https://user-images.githubusercontent.com/118304300/229361534-76c70b96-a0dc-43c1-9c57-f774183e9edb.png)
+После выполнения уничтожаем инфраструктуру:
+![изображение](https://user-images.githubusercontent.com/118304300/229361938-6e094e1b-4280-46ed-8263-3544c359b8d3.png)
