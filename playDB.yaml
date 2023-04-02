@@ -1,0 +1,18 @@
+---
+- hosts: DB
+  remote_user: testUser
+  tasks:
+    - name: Install postgreSQL
+      become: true
+      package:
+        name: postgresql
+        state: latest
+    - name: Starting postgresql 
+      become: true
+      service: 
+        name: postgresql
+        state: started
+        masked: no
+    - name: Check if postgre service is running
+      command: systemctl status postgresql
+      register: result
